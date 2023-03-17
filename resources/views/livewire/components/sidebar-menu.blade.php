@@ -1,6 +1,6 @@
 <div id="sidebar">
     <x-hub::menu handle="sidebar" current="{{ request()->route()->getName() }}">
-        <x-xtend:hub::menu-list :sections="$component->sections" :items="$component->items" :active="$component->attributes->get('current')" menu-type="main_menu" />
+        <x-sidebar-menu::menu-list :sections="$component->sections" :items="$component->items" :active="$component->attributes->get('current')" menu-type="main_menu" />
     </x-hub::menu>
 
     @if (Auth::user()->can('settings'))
