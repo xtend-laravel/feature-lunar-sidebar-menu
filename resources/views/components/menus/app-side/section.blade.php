@@ -12,7 +12,7 @@
 
     @if ($section->getItems()->count())
         <nav
-            class="mt-2"
+            class="mt-2 bg-black/30"
             x-show="showSubMenu"
             x-cloak
         >

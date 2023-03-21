@@ -1,4 +1,4 @@
-<div class="overflow-y-auto h-full bg-gradient-to-l from-[#131a24] to-[#222b39] shadow-md" data-ref="layout-sidemenu">
+<div class="overflow-y-auto h-full bg-gradient-to-l from-[#131a24] to-[#222b39]" data-ref="layout-sidemenu">
     <div class="border-t border-gray-100 pt-4 p-4 md:p-0">
         <div class="w-60">
             <a href="{{ route('hub.index') }}" class="px-4 flex items-center">

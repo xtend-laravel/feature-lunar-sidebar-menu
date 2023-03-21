@@ -4,9 +4,7 @@ namespace XtendLunar\Features\SidebarMenu;
 
 use CodeLabX\XtendLaravel\Base\XtendFeatureProvider;
 use Illuminate\Support\Facades\Blade;
-use Livewire\Livewire;
 use Lunar\Hub\Facades\Menu;
-use XtendLunar\Features\SidebarMenu\Livewire\Components\SidebarMenu;
 
 class SidebarMenuProvider extends XtendFeatureProvider
 {
@@ -19,7 +17,6 @@ class SidebarMenuProvider extends XtendFeatureProvider
     public function boot()
     {
         Blade::componentNamespace('XtendLunar\Features\SidebarMenu\Components', 'sidebar-menu');
-        Livewire::component('sidebar-menu', SidebarMenu::class);
 
         $this->setupSidebarMenuGroups();
     }
