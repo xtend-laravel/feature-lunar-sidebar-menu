@@ -2,8 +2,7 @@
     <div class="border-t border-gray-100 pt-4 p-4 md:p-0">
         <div class="w-60">
             <a href="{{ route('hub.index') }}" class="px-4 flex items-center">
-                <x-hub::branding.logo x-show="showExpandedMenu" />
-                <x-hub::branding.logo x-show="!showExpandedMenu" iconOnly />
+                <x-hub::branding.logo />
             </a>
         </div>
         <x-hub::menu handle="sidebar" current="{{ request()->route()->getName() }}">
