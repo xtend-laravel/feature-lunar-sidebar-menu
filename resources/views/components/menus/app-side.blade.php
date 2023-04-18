@@ -2,7 +2,7 @@
     <div class="border-t border-gray-100 pt-4 p-4 md:p-0">
         <div class="w-60">
             <a href="{{ route('hub.index') }}" class="px-4 flex items-center">
-                <x-hub::branding.logo />
+                <img src="{{ Vite::asset('resources/images/logo.png') }}" {{ $attributes }} alt="Logo" class="w-auto p-4" x-cloak />
             </a>
         </div>
         <x-hub::menu handle="sidebar" current="{{ request()->route()->getName() }}">
