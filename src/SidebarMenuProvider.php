@@ -39,12 +39,6 @@ class SidebarMenuProvider extends XtendFeatureProvider
                         'route' => 'hub.brands.index',
                         'icon' => 'view-grid',
                     ],
-                    'hub.product-options' => [
-                        'name' => __('Product Options'),
-                        'handle' => 'hub.product-options',
-                        'route' => 'hub.product-options.index',
-                        'icon' => 'clipboard-list',
-                    ],
                 ],
             ],
             'hub.sales' => [
@@ -65,12 +59,6 @@ class SidebarMenuProvider extends XtendFeatureProvider
                         'handle' => 'hub.api',
                         'route' => 'hub.addons.index',
                         'icon' => 'server',
-                    ],
-                    'hub.builder' => [
-                        'name' => __('Builder'),
-                        'handle' => 'hub.builder',
-                        'route' => 'hub.addons.index',
-                        'icon' => 'template',
                     ],
                 ],
             ],
@@ -114,28 +102,5 @@ class SidebarMenuProvider extends XtendFeatureProvider
                     ->icon($section['icon'] ?? null);
             });
         });
-        //
-        // $slot = Menu::slot('sidebar');
-        //
-        // $setupGroup = $slot
-        //     ->group('hub.setup')
-        //     ->name(__('Setup'));
-        //
-        // $productGroup = $setupGroup
-        //     ->section('hub.products')
-        //     ->name(__('adminhub::menu.sidebar.products'))
-        //     ->handle('hub.products')
-        //     ->route('hub.products.index')
-        //     ->icon('shopping-bag');
-        //
-        // $setupGroup
-        //     ->section('hub.collections')
-        //     ->name(__('adminhub::menu.sidebar.collections'))
-        //     ->handle([
-        //         'hub.collection-groups',
-        //         'hub.collections',
-        //     ])
-        //     ->route('hub.collection-groups.index')
-        //     ->icon('collection');
     }
 }

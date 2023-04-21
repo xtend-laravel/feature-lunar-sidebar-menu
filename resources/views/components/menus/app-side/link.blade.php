@@ -1,15 +1,16 @@
 <div
     @class([
-        'group flex space-x-4 hover:bg-[#B8A179]',
+        'group flex space-x-4 hover:bg-gray-100',
+        'hover:!bg-blue-900' => $menu === 'main',
         'justify-between items-center' => $hasSubItems
     ])
 >
     <a data-group-handle="{{ $groupHandle ?? '' }}"
        href="{{ route($item->route) }}"
        @class([
-           'flex items-center w-full text-sm font-medium py-3 px-4 gap-2',
-           'bg-[#ececec] text-gray-900 active' => $active,
-           'text-white' => !$active,
+           'flex items-center w-full text-sm font-medium py-3 px-4 gap-2 text-gray-500',
+           'bg-alto-200 text-gray-900 active' => $active,
+           'text-white' => !$active && $menu === 'main',
        ])
     >
         <span x-cloak>

@@ -17,7 +17,7 @@
         }
     }">
     <header
-        class="section-header p-4 bg-[#10141b] border-b border-gray-800 group flex justify-between text-sm font-semibold uppercase cursor-pointer text-white"
+        class="section-header p-3 bg-blue-950 border-b border-gray-800 group flex items-center justify-between text-sm font-semibold uppercase cursor-pointer text-white"
         x-on:click.prevent="toggleSubMenu">
         <span class="ml-1">{{ $group->name }}</span>
         <button x-cloak
@@ -32,6 +32,7 @@
         @if (count($group->getItems()))
             @foreach ($group->getItems() as $item)
                 <x-sidebar-menu::app-side.link
+                    :menu="$menu ?? 'main'"
                     :item="$item"
                     :group-handle="$group->handle"
                     :active="$item->isActive(

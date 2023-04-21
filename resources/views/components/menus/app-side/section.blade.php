@@ -4,6 +4,7 @@
     }"
 >
     <x-sidebar-menu::app-side.link
+        menu="main"
         :item="$section"
         :group-handle="$group->handle"
         :active="$section->isActive($current) || $section->hasActive($current)"

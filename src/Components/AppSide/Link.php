@@ -9,6 +9,7 @@ use Lunar\Hub\Menu\MenuSection;
 class Link extends Component
 {
     public function __construct(
+        public string $menu,
         public MenuLink|MenuSection $item,
         public $active = false,
         public bool $hasSubItems = false,
