@@ -48,18 +48,18 @@ class SidebarMenuProvider extends XtendFeatureProvider
             'hub.configure' => [
                 'name' => __('Configure'),
                 'sections' => [
-                    'hub.addons' => [
-                        'name' => __('Addons'),
-                        'handle' => 'hub.addons',
-                        'route' => 'hub.addons.index',
-                        'icon' => 'puzzle',
-                    ],
-                    'hub.api' => [
-                        'name' => __('API'),
-                        'handle' => 'hub.api',
-                        'route' => 'hub.addons.index',
-                        'icon' => 'server',
-                    ],
+                    // 'hub.addons' => [
+                    //     'name' => __('Addons'),
+                    //     'handle' => 'hub.addons',
+                    //     'route' => 'hub.addons.index',
+                    //     'icon' => 'puzzle',
+                    // ],
+                    // 'hub.api' => [
+                    //     'name' => __('API'),
+                    //     'handle' => 'hub.api',
+                    //     'route' => 'hub.addons.index',
+                    //     'icon' => 'server',
+                    // ],
                 ],
             ],
             'hub.settings' => [
@@ -68,16 +68,6 @@ class SidebarMenuProvider extends XtendFeatureProvider
                     'hub.settings.shop' => [
                         'name' => __('Shop Settings'),
                         'handle' => 'hub.settings.shop',
-                        'route' => 'hub.settings',
-                    ],
-                    'hub.settings.customer' => [
-                        'name' => __('Customer Settings'),
-                        'handle' => 'hub.settings.shop',
-                        'route' => 'hub.settings',
-                    ],
-                    'hub.settings.sales' => [
-                        'name' => __('Sales Settings'),
-                        'handle' => 'hub.settings.sales',
                         'route' => 'hub.settings',
                     ],
                 ],
